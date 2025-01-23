@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Make an Appointment page</title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+<body>
+
+<!--/**
+* Comments!
+**/-->
+
+    <div id="navigationBar">
+        <a href="index.html">Home</a>
+        <a href="inquiry.html">Contact Us</a>
+        <a href="makeanappointment.html">Make An Appointment</a>
+    </div>
+
+    <div id="makeAppointmentDiv">
+
+        <form id="appointmentForm">
+            <h2>Make an Appointment</h2><br>
+            <h4>Appointment details</h4>
+
+            <div>
+                <label for="specialityType">Specialty: </label>
+                    <select name="specialityType" id="specialityType">
+                        <option value="cardiologyAppointment">Cardiology</option>
+                        <option value="dermatologyAppointment">Dermatology</option>
+                        <option value="generalSurgeryAppointment">General Surgery</option>
+                        <option value="neurologyAppointment">Neurology</option>
+                        <option value="orthodontistAppointment">Orthodontist</option>
+                    </select>
+            </div>
+
+            <div>
+                <label for="doctorAppointment">Doctor: </label>
+                    <select name="doctorAppointment" id="doctorAppointment">
+                        <option value="sallyCarve">Sally Carve</option>
+                        <option value="simonPureau">Simon Pureau</option>
+                        <option value="jonathanLives">Jonathan Lives</option>
+                        <option value="nathanSmith">Nathan Smith</option>
+                        <option value="natashaFahim">Natasha Fahim</option>
+                        <option value="tomRichardson">Tom Richardson</option>
+                        <option value="fabianRoss">Fabian Ross</option>
+                        <option value="lindaLiao">Linda Liao</option>
+                        <option value="azureTyrique">Azure Tyrique</option>
+                        <option value="ziynetMongkut">Ziynet Mongkut</option>
+                    </select>
+            </div>
+
+            <div>
+                <label for="appointmentDate">Selected date: </label>
+                    <input type="date" id="appointmentDate" name="appointmentDate">
+            </div>
+
+            <div>
+                <label for="preferredTime">Preferred Time: </label>
+                    <select name="preferredTime" id="preferredTime">
+                        <option value="am">AM</option>
+                        <option value="pm">PM</option>
+                    </select>
+            </div>
+
+            <div>
+                <h4>Patient's Details</h4>
+
+                <label for="patientName">Name: </label>
+                    <input type="text" id="patientName" value="">
+                <div class="error"></div>
+            </div>
+
+            <div>
+                <label for="patientEmail">Email: </label>
+                    <input type="text" id="patientEmail" value="">
+                <div class="error"></div>
+            </div>
+
+            <button type ="submit" id="Submit">Submit</button><br>
+            <br>
+        </form>
+
+    </div>
+
+
+    <div id = pageBottom>
+        <p>Silver Oak Medical Center</p>
+        <p>324 Aubone St, Freshwater, TRZ, 9882  </p>
+        <p>PH: (31) 8972 7655</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inquiry page</title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    <script>
+
+    </script>
+
+</head>
+<body>
+    <div id="navigationBar">
+        <a href="index.html">Home</a>
+        <a href="inquiry.html">Contact Us</a>
+        <a href="makeanappointment.html">Make An Appointment</a>
+    </div>
+
+    <div id="clientFormDiv">
+
+
+
+        <form id="inquiryForm">
+            <h2>Make an Inquiry</h2>
+
+            <div>
+                <label for="inquiryName">Name: </label>
+                    <input type="text" id="inquiryName" value="">
+                <strong><div class="error" id="nameError"></div></strong>
+            </div>
+
+            <div>
+                <label for="email">Email: </label>
+                    <input type="text" id="email" value="">
+                <strong><div class="error" id="emailError"></div></strong>
+            </div>
+
+            <div>
+                <label for="contactNumber">Contact Number: </label>
+                    <input type="text" id="contactNumber" value="">
+                <strong><div class="error" id="contactError"></div></strong>
+            </div>
+
+            <div>
+            <label for="inquiryType">Type of inquiry: </label>
+                <select name="inquiryType" id="inquiryType">
+                    <option value="generalInquiry">General Inquiry</option>
+                    <option value="estimatedCost">Estimated Cost</option>
+                    <option value="contactDoctor">Contact Doctor</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Message: </label>
+                    <input type="text" id="message" value="">
+                <strong><div class="error" id="messageError"></div></strong>
+            </div>
+
+            <button type ="button" onclick="return validateForm()">Submit</button>
+
+            <strong><div id="formSubmittedMessage"></div></strong>
+
+        </form>
+
+    </div>
+
+    <div id = pageBottom>
+        <p>Silver Oak Medical Center</p>
+        <p>324 Aubone St, Freshwater, TRZ, 9882  </p>
+        <p>PH: (31) 8972 7655</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

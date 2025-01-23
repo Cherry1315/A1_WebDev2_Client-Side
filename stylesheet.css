@@ -1,0 +1,220 @@
+
+    body{
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+    button {
+        padding: 7px 17px;
+        border-radius: 5px;
+        border: 1px solid #000;
+        background-color: #b3d3fc;
+        margin-top: 17px;
+        width: 100%;
+    }
+
+    h2 {
+        line-height: 5px;
+        padding-left: 10px;
+    }
+
+    .titleName {
+        font-family: Helvetica, Arial, sans-serif;
+        padding-left: 40px;
+        padding-top: 125px;
+        color: #3483eb;
+
+    }
+
+    .welcomeMessage {
+        font-family: Lucida Console, Courier New, monospace;
+        padding-left: 115px;
+        color: #3483eb;
+    }
+
+    #sectionOne {
+        background-image: url('images/introImage.jpg');
+        background-size: cover;
+        height: 480px;
+        width: auto;
+        padding-top: 80px;
+    }
+
+    #sectionTwoHeader {
+        text-align: center;
+        padding: 30px;
+        color: #3483eb;
+    }
+
+    #sectionTwo {
+         overflow: hidden;
+    }
+
+    #sectionTwo figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 25s sectionTwo infinite;
+    }
+
+    /**
+        *So images scale when website window size is changed
+    **/
+    #sectionTwo figure img{
+        float: left;
+        width: 20%;
+    }
+
+    @keyframes sectionTwo {
+        0% {
+            left: 0;
+        }
+        20% {
+            left: 0;
+        }
+        25% {
+            left: -100%;
+        }
+        45% {
+            left: -100%;
+        }
+        50% {
+            left: -200;
+        }
+        70% {
+            left: -200%;
+        }
+        75% {
+            left: -300%;
+        }
+        95% {
+            left: -300%
+        }
+        100% {
+            left: -400%;
+        }
+    }
+
+
+    #sectionThree {
+         height:auto;
+         width: auto;
+
+    }
+
+    .card {
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+        max-width: auto;
+        margin: auto;
+        text-align: center;
+        padding: 2px;
+    }
+
+    /**
+        *So images scale when website window size is changed
+    **/
+    #sectionThree img {
+            float: center;
+            width: 80%;
+    }
+
+    #sectionThree {
+        column-count: 5;
+    }
+
+    #sectionThreeHeader {
+        text-align: center;
+        padding: 30px;
+        color: #3483eb;
+    }
+
+    form {
+        max-width: 400px;
+        margin: auto;
+        box-sizing: border-box;
+        box-shadow:  4px 4px 4px rgba(0, 0, 0, 0.2);
+        padding: 30px;
+        width: 100%;
+    }
+
+    form div input {
+        width: 100%
+        height: 50px;
+        border-radius: 6px;
+        outline: none;
+        width: 100%;;
+        box-shadow:  2px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .error {
+        color: red;
+        font-size: 14px;
+    }
+
+    #formSubmittedMessage {
+        color: #008000;
+        font-size: 14px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 3px;
+        margin-top: 17px;
+    }
+
+    select {
+        width: 100%
+        height: 50px;
+        border-radius: 6px;
+        outline: none;
+        width: 100%;;
+        box-shadow:  2px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    #pageBottom {
+        background-color: #b3d3fc;
+        text-align: center;
+        font-size:12px;
+        position: relative; //so this section stays on the bottom of the page no matter of the pages contents.
+        width: 100%;
+        bottom: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .blurb {
+        text-align: center;
+    }
+
+
+
+
+
+        /* Style the navbar */
+#navigationBar {
+  overflow: hidden;
+  background-color: #3483eb;
+}
+
+/* Navbar links */
+#navigationBar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
